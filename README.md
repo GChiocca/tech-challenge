@@ -27,3 +27,22 @@ Prd:
 terraform workspace select prd
 terraform plan -var-file="./ukprd.tfvars" -out plan.tfplan
 ```
+
+## Challenge 2
+
+As I dont have easy access to an AWS instance, and the hints included Azure documentation, I am querying the Azure host meta data.
+My example uses powershell and I have included some unit tests
+
+To return all data in json
+```
+.\Get-HostMetadata.ps1 
+```
+To return specific key value
+```
+.\Get-HostMetadata.ps1 -KeyName location
+```
+To invoke unit tests
+```
+Invoke-Pester .\Get-HostMetadata.tests.ps1 -Output Detailed
+```
+
