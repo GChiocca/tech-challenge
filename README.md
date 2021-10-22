@@ -17,14 +17,12 @@ https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best
 tfvar files have been included to show deployments to different environments when using workspaces
 
 Dev:
-
 ```
 terraform workspace select dev
 terraform plan -var-file="./ukdev.tfvars" -out plan.tfplan
 ```
 
 Prd:
-
 ```
 terraform workspace select prd
 terraform plan -var-file="./ukprd.tfvars" -out plan.tfplan
