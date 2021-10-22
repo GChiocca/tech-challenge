@@ -30,7 +30,7 @@ terraform plan -var-file="./ukprd.tfvars" -out plan.tfplan
 
 ## Challenge 2
 
-As I dont have easy access to an AWS instance and the hists included Azure documentation I am querying the Azure host meta data.
+As I dont have easy access to an AWS instance, and the hints included Azure documentation, I am querying the Azure host meta data.
 My example uses powershell and I have included some unit tests
 
 To return all data in json
