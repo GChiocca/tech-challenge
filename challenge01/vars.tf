@@ -1,4 +1,4 @@
-variable location {}
+variable "location" {}
 variable "appname" {}
 variable "vm_app" {}
 variable "vm_web" {}

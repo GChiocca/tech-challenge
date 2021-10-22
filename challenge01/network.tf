@@ -40,8 +40,8 @@ resource "azurerm_lb" "intlbapp" {
   resource_group_name = azurerm_resource_group.rg.name
   sku                 = "standard"
   frontend_ip_configuration {
-    name                 = "lb-int-app-${local.name}-01"
-    subnet_id = azurerm_subnet.subnet["app"].id
+    name                          = "lb-int-app-${local.name}-01"
+    subnet_id                     = azurerm_subnet.subnet["app"].id
     private_ip_address_allocation = "dynamic"
   }
 }
@@ -52,8 +52,8 @@ resource "azurerm_lb" "intlbsql" {
   resource_group_name = azurerm_resource_group.rg.name
   sku                 = "standard"
   frontend_ip_configuration {
-    name                 = "lb-int-sql-${local.name}-01"
-    subnet_id = azurerm_subnet.subnet["sql"].id
+    name                          = "lb-int-sql-${local.name}-01"
+    subnet_id                     = azurerm_subnet.subnet["sql"].id
     private_ip_address_allocation = "dynamic"
   }
 }

@@ -2,7 +2,7 @@
 
 ## Challenge 1
 
-Using terraform to deploy resources based on the following Azure example:
+I'm using terraform to deploy resources based on the following Azure example:
 
 https://docs.microsoft.com/en-us/azure/architecture/example-scenario/infrastructure/multi-tier-app-disaster-recovery
 

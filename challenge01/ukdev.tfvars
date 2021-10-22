@@ -1,15 +1,17 @@
 location    = "UK South"
 appname     = "clng"
 environment = "dev"
-vm_app      = {
+vm_app = {
   count = 2
-  size = "Standard_B2ms"
+  size  = "Standard_B2ms"
 }
-vm_web      = {
-  size = "Standard_B2ms"
+vm_web = {
+  count = 2
+  size  = "Standard_B2ms"
 }
-vm_sql     = {
-  size = "Standard_B2ms"
+vm_sql = {
+  count = 2
+  size  = "Standard_B2ms"
 }
 vnet = {
   address_space = "10.0.0.0/26"
