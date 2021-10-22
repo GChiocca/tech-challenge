@@ -45,4 +45,11 @@ To invoke unit tests
 ```
 Invoke-Pester .\Get-HostMetadata.tests.ps1 -Output Detailed
 ```
+## Challenge 3
+
+I have created two examples for challenge 3 using powershell. 
+
+challenge03a.ps1 returns the value if the key is in the first level of the object
+
+challenge03b.ps1 recurses through the object to find any key that matches the name.
 
